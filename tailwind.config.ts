@@ -8,13 +8,22 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'satoshi': ['var(--font-satoshi)'], // Keep 'satoshi' font
+        // Removed the 'clash-display' font reference
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        'primary': '#2A254B',  // The dark blue color from your design
+        'secondary': '#F9F9F9', // The light background color
+      },
     },
   },
   plugins: [],
 };
+
 export default config;
